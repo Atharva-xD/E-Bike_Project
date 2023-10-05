@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(to right,#f00e0e,#000c14);    
+}
+
+.form-select{
+    margin-bottom: 20px;
+}
+.col-lg-7{
+    margin-left: auto;
+}
+footer{
+    background: linear-gradient(to right ,#ff002f,#000c14);
+    color: white;
+}
+.fs-2 a{
+    text-decoration: none;
+    color: black;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn a:hover{
+    color: white;
+}

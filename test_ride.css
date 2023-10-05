@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #ff002f, #000c14);
+
+}
+.col-lg-4{
+    margin-left: auto;
+}
+.form-select {
+    margin-bottom: 20px;
+}
+footer{
+    background: linear-gradient(to right ,#ff002f,#000c14);
+    color: white;
+}

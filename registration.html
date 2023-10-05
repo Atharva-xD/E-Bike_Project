@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="registrationstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <title>Electrify Registration Form</title>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      separateDialCode: true
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Registration Form</div>
+    <div class="content">
+      <form action="registration.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="fname" autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" name="uname" autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" name="email" autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Phone number *" name="num" id="phone" autocomplete="off" required autofocus>
+
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" name="pwd" autocomplete="off" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" value="y" id="dot-2">
+          <input type="radio" name="gender" value="n" id="dot-3">
+          <input type="radio" name="gender" value="l" id="dot-1">
+          <span class="gender-title">Would you Like to take Premium Membership in future?</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">YES</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">No</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Not Sure</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

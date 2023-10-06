@@ -5,6 +5,6 @@ To run the given code you need to:
 - Start Apache and MySQL App (On Xampp Control Panel).
 - Click on "Admin" for MYSQL app on Xampp Control panel to create databases on MyPHPAdmin.
 - Here we have created 4 different databases which is being used for different purposes in the project (Admin,Car_details,Book_Details,etc).
-- You can directly import those 4 databases from the folder "db" in the master repository.
+- You can directly import those 4 databases from the folder "db" in the master branch.
 
 **Note**: Move the entire zip folder to the "xampp\htdocs" folder  where you have downloaded Xampp application.
